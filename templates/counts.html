@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>شمارش</title>
+  </head>
+  <body>
+    <h1>Below text has {{word}} words.</h1>
+    <br>
+    <a href="{% url 'home' %}"> Go Back! </a>
+    <br>
+    <br>
+    {{fulltext}}
+    <br>
+    <br>
+    {% for Word, c in worddic %}
+    {{Word}}-{{c}}
+    <br>
+    {% endfor %}
+
+  </body>
+</html>
